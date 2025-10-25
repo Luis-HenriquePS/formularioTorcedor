@@ -9,35 +9,57 @@
 </head>
 
 <body>
+    <header>
+        <h1>Cadastro do Torcedor</h1>
+        <p>Slogan de impacto</p>
+    </header>
+
     <h1>CADASTRO DO TORCEDOR</h1>
+
     <form action="" method="get">
-        <div class="box">
+        <h2>Dados do Torcedor</h2>
+        <div class="box-text">
             <label for="name">Nome: </label>
             <input type="text" name="name" id="name" placeholder="*Nome completo" required>
         </div>
-        <div class="box">
+        <div class="box-text">
             <label for="cpf">CPF: </label>
             <input type="text" name="cpf" id="cpf" placeholder="*CPF" required>
         </div>
 
-        <div class="box">
+        <div class="box-radio">
             <p>Quantas vezes?</p>
-            <input type="radio" name="rare" id="rare">
-            <label for="rare">Raramente</label>
-            <input type="radio" name="few" id="few">
-            <label for="few">Pouco</label>
-            <input type="radio" name="many" id="many">
-            <label for="many">Muito</label>
-            <input type="radio" name="frequently" id="frequently">
-            <label for="frequently">Frequentemente</label>
+            <div>
+                <input type="radio" name="select" id="rare">
+                <label for="rare">Raramente</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="few">
+                <label for="few">Pouco</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="many">
+                <label for="many">Muito</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="frequently">
+                <label for="frequently">Frequentemente</label>
+            </div>
         </div>
 
-        <div class="box">
-            <input type="checkbox" name="fan" id="fan">
-            <label for="fan">Sou socio Torcedor</label>
-            <input type="checkbox" name="oficialshirt" id="oficialshirt">
-            <label for="oficialshirt">Possuo Camisa Oficial</label>
+        <div class="box-radio">
+            <div>
+                <input type="checkbox" name="fan" id="fan">
+                <label for="fan">Sou socio torcedor</label>
+            </div>
+            <div>
+                <input type="checkbox" name="oficialshirt" id="oficialshirt">
+                <label for="oficialshirt">Possuo camisa oficial</label>
+            </div>
 
+        </div>
+
+        <div class="box-option">
             <select id="clubs" name="clubs">
                 <option value="select">Selecione uma opção</option>
                 <option value="Santos">Santos</option>
@@ -63,7 +85,11 @@
             </select>
         </div>
 
-        <button id="botao">SALVAR E CONTINUAR</button>
+        <div class="button-container">
+            <button id="btn-send">ENVIAR</button>
+            <button id="btn-clean">LIMPAR</button>
+        </div>
+
     </form>
 </body>
 
