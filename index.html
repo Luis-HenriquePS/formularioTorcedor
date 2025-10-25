@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Torcedor</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <div id="nacionalidade">
+            <h2>Nacionalidade</h2>
+            <div class="box">
+                <label for="nacionality">País: </label>
+                <input type="text" name="nacionality" id="nacionality" placeholder="Brasil">
+            </div>
+        </div>
+
+        <div id="dadosAcesso">
+            <div class="box">
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" placeholder="*CPF" required>
+            </div>
+            <div class="box">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="*E-mail" required>
+            </div>
+            <div class="box">
+                <label for="password">Senha: </label>
+                <input type="text" name="password" id="password" placeholder="*Senha" required>
+            </div>
+            <div class="box">
+                <label for="passwordC">Senha: </label>
+                <input type="text" name="passwordC" id="passwordC" placeholder="*Confirme a senha" required>
+            </div>
+        </div>
+
+        <div id="dadosCadastro">
+            <div class="box">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" placeholder="*Nome completo" required>
+            </div>
+            <div class="box">
+                <label for="birthdate">Data de nascimento: </label>
+                <input type="text" name="birthdate" id="birthdate" placeholder="*Data de nascimento:" required>
+            </div>
+            <div class="box">
+                <label for="gender">Sexo: </label>
+                <input type="text" name="gender" id="gender" placeholder="Sexo">
+            </div>
+            <div class="box">
+                <label for="cel">Celular: </label>
+                <input type="text" name="cel" id="cel" placeholder="Celular" required>
+            </div>
+        </div>
+
+        <div id="endereco">
+            <div class="box">
+                <label for="country">País: </label>
+                <input type="text" name="country" id="country" placeholder="Brasil">
+            </div>
+            <div class="box">
+                <label for="cep">CEP: </label>
+                <input type="text" name="cep" id="cep" placeholder="*CEP" required>
+            </div>
+            <div class="box">
+                <label for="address">Logradouro: </label>
+                <input type="text" name="address" id="address" placeholder="*Logradouro" required>
+            </div>
+            <div class="box">
+                <label for="number">Número</label>
+                <input type="text" name="number" id="number" placeholder="*Número" required>
+            </div>
+            <div class="box">
+                <label for="complement">Complemento</label>
+                <input type="text" name="complement" id="complement" placeholder="Complemento">
+            </div>
+            <div class="box">
+                <label for="neighborhood">Bairro</label>
+                <input type="text" name="neighborhood" id="neighborhood" placeholder="*Bairro" required> 
+            </div>
+            <div class="box">
+                <label for="state">Estado</label>
+                <input type="text" name="state" id="state" placeholder="*Estado" required>
+            </div>
+            <div class="box">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" placeholder="*Cidade" required>
+            </div>
+        </div>
+        <button id="botao">SALVAR E CONTINUAR</button>
+    </form>
+</body>
+</html>
