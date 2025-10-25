@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário do Torcedor</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -30,19 +31,19 @@
         <div class="box-radio">
             <p>Quantas vezes?</p>
             <div>
-                <input type="radio" name="select" id="rare">
+                <input type="radio" name="select" id="rare" value="Raramente">
                 <label for="rare">Raramente</label>
             </div>
             <div>
-                <input type="radio" name="select" id="few">
+                <input type="radio" name="select" id="few" value="Pouco">
                 <label for="few">Pouco</label>
             </div>
             <div>
-                <input type="radio" name="select" id="many">
+                <input type="radio" name="select" id="many" value="Muito">
                 <label for="many">Muito</label>
             </div>
             <div>
-                <input type="radio" name="select" id="frequently">
+                <input type="radio" name="select" id="frequently" value="Frequentemente">
                 <label for="frequently">Frequentemente</label>
             </div>
         </div>
@@ -53,17 +54,17 @@
                 <label for="fan">Sou socio torcedor</label>
             </div>
             <div>
-                <input type="checkbox" name="oficialshirt" id="oficialshirt">
+                <input type="checkbox" name="oficialshirt" id="oficialshirt" >
                 <label for="oficialshirt">Possuo camisa oficial</label>
             </div>
 
         </div>
 
         <div class="box-option">
-            <select id="clubs" name="clubs">
-                <option value="select">Selecione uma opção</option>
+            <select id="clubs" name="clubs" required>
+                <option value="none">Selecione uma opção</option>
                 <option value="Santos">Santos</option>
-                <option value="SaoPaulo">São Paulo</option>
+                <option value="São Paulo">São Paulo</option>
                 <option value="Palmeiras">Palmeiras</option>
                 <option value="Flamengo">Flamengo</option>
                 <option value="Cruzeiro">Cruzeiro</option>
@@ -72,13 +73,13 @@
                 <option value="Bahia">Bahia</option>
                 <option value="Vasco">Vasco da Gama</option>
                 <option value="BotaFogo">Bota Fogo</option>
-                <option value="ECVitoria">EC Vitória</option>
+                <option value="EC Vitoria">EC Vitória</option>
                 <option value="Fortaleza">Fortaleza</option>
-                <option value="Gremio">Grêmio</option>
+                <option value="Grêmio">Grêmio</option>
                 <option value="Internacional">Internacional</option>
-                <option value="AtleticoMineiro">Atlético Mineiro</option>
-                <option value="SportRecife">Sport Recife</option>
-                <option value="CearaSC">Ceará SC</option>
+                <option value="Atlético Mineiro">Atlético Mineiro</option>
+                <option value="Sport Recife">Sport Recife</option>
+                <option value="Ceará SC">Ceará SC</option>
                 <option value="Bragantino">Bragantino</option>
                 <option value="Corinthians">Corinthians</option>
                 <option value="Juventude">Juventude</option>
