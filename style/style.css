@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/745c796d8a8ed3c0b37cca41f029ca4d?family=FC);
+
 * {
     box-sizing: border-box;
 }
@@ -10,37 +12,61 @@ body {
 
 header {
     width: 100%;
-    height: 300px;
-    background-color: #333333;
+    height: 650px;
+    color: #FFFFFF;
+    background: no-repeat;
+    background-image: url('../img/banner-1.webp');
+    background-size: 100% 100%;
+}
+
+.filter {
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, .20);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #FFFFFF;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 4.5em;
 }
 
 header p {
-    font-size: 1.5em;
+    color: #000000;
+    font-size: 2.5em;
+    background-color: rgba(126, 126, 126, 0.636);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'FC';
 }
 
 form {
     margin: 50px 15vw;
-    padding: 30px 20px;
+    padding: 0;
+    background-color: #a4a4a4;
+    background-image: url('../img/Santos_Logo.png');
+    background-size: 10% 20%;
+    filter: opacity(0.6);
+}
+
+.formulario {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     border: 2px solid #333333;
     border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    background-color: transparent;
+    z-index: 100;
 }
 
 form h2 {
     align-self: center;
+    font-size: clamp(1em, 1em + 1vw, 1.7em);
 }
 
 label {
@@ -49,6 +75,7 @@ label {
 }
 
 .box-text {
+    padding: 30px 20px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -63,7 +90,6 @@ label {
 input[type="text"] {
     height: 30px;
     width: 100%;
-
 }
 
 .box-radio {
@@ -72,7 +98,7 @@ input[type="text"] {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    padding: 2vw;
+    padding: 10px 4vw;
 }
 
 .box-radio div {
@@ -84,6 +110,7 @@ input[type="text"] {
 }
 
 .box-option {
+    padding: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -107,6 +134,7 @@ input[type="checkbox"] {
     justify-content: center;
     gap: 10px;
     width: 100%;
+    padding: 20px;
 }
 
 .button-container button {
@@ -121,4 +149,16 @@ input[type="checkbox"] {
     background-color: #333333;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0 70px 0;
+    background-color: yellow;
+}
+
+footer p{
+    font-size: clamp(0.8em, 0.8em + 1vw, 1.7em);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
