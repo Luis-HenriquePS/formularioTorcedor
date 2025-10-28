@@ -6,16 +6,16 @@ function send() {
     const name = document.getElementById('name').value;
     const cpf = document.getElementById('cpf').value;
     const selectTime = document.querySelector('input[name="select"]:checked').value;
-    const socio = document.getElementById('fan').value;
-    const shirt = document.getElementById('oficialshirt').value;
+    const socio = document.getElementById('fan').checked;
+    const shirt = document.getElementById('oficialshirt').checked;
     const club = document.getElementById('clubs').value
 
     alert(`
         Nome: ${name}\n
         CPF: ${cpf}\n
         Quantas vezes vai ao estádio?: ${selectTime}\n
-        Sócio Torcedor: ${socio == 'on'? 'Sim': 'Não'}\n
-        Possui camisa oficial?: ${shirt == 'on'? 'Sim': 'Não'}\n
+        Sócio Torcedor: ${socio? 'Sim': 'Não'}\n
+        Possui camisa oficial?: ${shirt ? 'Sim': 'Não'}\n
         Clube: ${club == 'none' ? 'N/A' : club}
         `);
 
