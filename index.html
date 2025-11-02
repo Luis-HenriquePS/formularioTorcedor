@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário do Torcedor</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
         </div>
 
     </header>
-    <form action="" method="get">
+    <form action="./php/formulario.php" method="post">
         <h2>Dados do Torcedor</h2>
         <div class="box-text">
             <label for="name">Nome: </label>
@@ -31,33 +30,32 @@
         <div class="box-radio">
             <p>Quantas vezes?</p>
             <div>
-                <input type="radio" name="select" id="rare" value="Raramente">
+                <input type="radio" name="estadium" id="rare" value="Raramente">
                 <label for="rare">Raramente</label>
             </div>
             <div>
-                <input type="radio" name="select" id="few" value="Pouco">
+                <input type="radio" name="estadium" id="few" value="Pouco">
                 <label for="few">Pouco</label>
             </div>
             <div>
-                <input type="radio" name="select" id="many" value="Muito">
+                <input type="radio" name="estadium" id="many" value="Muito">
                 <label for="many">Muito</label>
             </div>
             <div>
-                <input type="radio" name="select" id="frequently" value="Frequentemente">
+                <input type="radio" name="estadium" id="frequently" value="Frequentemente">
                 <label for="frequently">Frequentemente</label>
             </div>
         </div>
 
         <div class="box-radio">
             <div>
-                <input type="checkbox" name="fan" id="fan">
+                <input type="checkbox" name="fan" id="fan" value="Sim">
                 <label for="fan">Sou socio torcedor</label>
             </div>
             <div>
-                <input type="checkbox" name="oficialshirt" id="oficialshirt">
-                <label for="oficialshirt">Possuo camisa oficial</label>
+                <input type="checkbox" name="shirt" id="shirt" value="Sim">
+                <label for="shirt">Possuo camisa oficial</label>
             </div>
-
         </div>
 
         <div class="box-option">
@@ -87,7 +85,7 @@
         </div>
 
         <div class="button-container">
-            <button id="btn-send">ENVIAR</button>
+            <button id="btn-send" type="submit">ENVIAR</button>
             <button id="btn-clean">LIMPAR</button>
         </div>
     </form>
